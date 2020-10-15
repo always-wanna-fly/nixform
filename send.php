@@ -40,14 +40,14 @@ $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'vovaivanitskyi@gmail.com'; // Логин на почте
-    $mail->Password   = 'volodimirim312'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('vovaivanitskyi@gmail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', 'Имя отправителя'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('vovaivanitskyi@gmail.com');
+    $mail->addAddress('');
 
 
 if (!empty($file['name'][0])) {
